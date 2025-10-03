@@ -158,6 +158,22 @@ function BuilderPage() {
         },
       };
 
+  const userAppearance = {
+    elements: {
+      userButtonPopoverCard: `bg-[#2c3b39]  ${
+        isDark ? "text-white" : "text-black"
+      } border-white/20 shadow-lg`,
+      userButtonPopoverFooter: "",
+      userButtonPopoverActionButton: isDark
+        ? "hover:text-stone-400 text-white"
+        : "text-black",
+    },
+    variables: {
+      colorBackground: isDark ? "#2c3b39" : "#ffffff",
+      colorText: isDark ? "#ffffff" : "#111111",
+    },
+  };
+
   const bgClass = isDark
     ? "bg-[linear-gradient(to_bottom,#000000,#4a6d69)]"
     : "bg-[linear-gradient(to_bottom,#ffffff,#86efac)]";
@@ -199,12 +215,13 @@ function BuilderPage() {
                     <Download size={18} />
                     <span>Export PDF</span>
                   </button>
-                  <UserButton />
+                  <UserButton appearance={userAppearance} />
                 </>
               ) : (
                 <SignInButton
+                  forceRedirectUrl="/create"
+                  signUpForceRedirectUrl="/create"
                   appearance={clerkAppearance}
-                  fallbackRedirectUrl={"/create"}
                   mode="modal"
                 >
                   <button
