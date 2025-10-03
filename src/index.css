@@ -85,7 +85,17 @@ body {
   font-family: serif;
 }
 
+.cl-internal-1dauvpw {
+  display: none;
+}
 
+.cl-userButtonPopoverActionButton__manageAccount {
+  display: none;
+}
+
+.cl-internal-l2l775 {
+  display: none;
+}
 
 @layer base {
   :root {
@@ -142,8 +152,6 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {

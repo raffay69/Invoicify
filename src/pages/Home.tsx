@@ -135,6 +135,8 @@ export function Hero({ isDark }: { isDark: any }) {
 
               <div className="relative">
                 <a
+                  target="_blank"
+                  href="https://github.com/raffay69/Invoicify"
                   className={` ${
                     isDark
                       ? "bg-stone-800 border-black text-white hover:bg-stone-900 shadow-[inset_0px_2.5px_0px_rgba(255,255,255,0.1)]"
@@ -267,15 +269,15 @@ export function WobbleCardDemo({ isDark }: { isDark: any }) {
         >
           <div className="max-w-xs">
             <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white dark:text-blac">
-              Gippity AI powers the entire universe
+              Invoices, Done in Seconds
             </h2>
-            <p className="mt-4 text-left  text-base/6 text-neutral-200">
-              With over 100,000 mothly active bot users, Gippity AI is the most
-              popular AI platform for developers.
+            <p className="mt-4 text-left text-base/6 text-neutral-200">
+              Skip the hassle—build sleek, professional invoices instantly. No
+              strings attached, just clean invoices fast.
             </p>
           </div>
           <img
-            src="dark-create.png"
+            src={isDark ? "dark-create.png" : "light-create.png"}
             width={500}
             height={500}
             alt="linear demo image"
@@ -294,11 +296,11 @@ export function WobbleCardDemo({ isDark }: { isDark: any }) {
               : "bg-gradient-to-r from-[#14b8a6] to-[#10b981]"
           }`}
         >
-          <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            No shirt, no shoes, no weapons.
+          <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            Always Free. Always Private.
           </h2>
-          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            If someone yells “stop!”, goes limp, or taps out, the fight is over.
+          <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+            We never store your data. What you make is yours—forever.
           </p>
         </WobbleCard>
         <WobbleCard
@@ -314,21 +316,20 @@ export function WobbleCardDemo({ isDark }: { isDark: any }) {
           }`}
         >
           <div className="max-w-sm">
-            <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-              Signup for blazing-fast cutting-edge state of the art Gippity AI
-              wrapper today!
+            <h2 className="max-w-sm md:max-w-lg text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              Stop Wasting Time on Invoices
             </h2>
-            <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-              With over 100,000 mothly active bot users, Gippity AI is the most
-              popular AI platform for developers.
+            <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+              Invoicify builds them for you—fast, private, and free. Focus on
+              work, not paperwork.
             </p>
           </div>
           <img
-            src="/dark-create.png"
+            src={isDark ? "dark-create.png" : "light-create.png"}
             width={500}
             height={500}
             alt="linear demo image"
-            className="absolute -right-10 md:-right-[40%] lg:-right-[0%] bottom-2 object-contain rounded-2xl"
+            className="absolute -right-10 md:-right-[40%] lg:-right-[0%] -bottom-2 object-contain rounded-2xl"
           />
         </WobbleCard>
       </div>
